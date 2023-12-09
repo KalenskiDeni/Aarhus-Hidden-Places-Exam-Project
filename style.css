@@ -1,0 +1,59 @@
+body {
+    background-image: url("Images/mainpageimg.png");
+
+    background-size: cover; /* Adjusts the size to cover the whole screen */
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 25.28px;
+    width: 906px;
+    height: 53.673px;
+    flex-shrink: 0;
+    margin-top: 200px;
+    margin-left: 250px;
+  }
+
+
+header img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintains the aspect ratio */
+    position: absolute; /* Set the position of the logo to absolute */
+    top: 30px; /* Adjust the top distance from the top of the header */
+    left: 30px; /* Adjust the left distance from the left of the header */
+}
+
+nav ul {
+    color: #FFF;
+    text-align: center;
+    font-family: Century Gothic;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 35px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #A0B883; /* Change color on hover (you can customize this) */
+}
