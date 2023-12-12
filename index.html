@@ -5,24 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aarhus Hidden places</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
+<body class="body">
+
     <header>
         <!-- My logo goes here -->
         <img src="Images/logowhite.png" alt="Logo">
 
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Fugletårn</a></li>
-                <li><a href="#services">Park Eskelunden</a></li>
-                <li><a href="#contact">Båken</a></li>
+        <nav class="primary-nav">
+            <ul class="primary-nav">
+                <li><a href="#home" class="primary-nav">Home</a></li>
+                <li><a href="#home" class="primary-nav">Fugletårn</a></li>
+                <li><a href="#home" class="primary-nav">Park Eskelunden</a></li>
+                <li><a href="#home" class="primary-nav">Båken</a></li>
             </ul>
         </nav>
 
+        <div class="switch">
+            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+            <label for="language-toggle"></label>
+            <span class="on">DK</span>
+            <span class="off">EN</span>
+          </div>
+
+          <div class="section"></div>
+
     </header>
 
+
+
     <h1>HIDDEN PLACES</h1>
+
+    <div class="places">
+        <div class="image-container">
+          <img src="Images/place1.png" alt="Place 1">
+          <div class="description">
+            <p>Fugletårn</p>
+            <button>Explore Now</button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="Images/place2.png" alt="Place 2">
+          <div class="description">
+            <p>Park Eskelunden</p>
+            <button>Explore Now</button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="Images/place3.png" alt="Place 3">
+          <div class="description">
+            <p>Båken</p>
+            <button>Explore Now</button>
+          </div>
+        </div>
+    </div>
+
+<div class="reviews-title">
+    <h1>Check out some reviews:</h1>
+</div>
+
+<div class="add-review-button">
+    <button>+ Add your own</button>
+</div>
+
+<div class="container">
+<div class="rectangle-container">
+    <div class="photo">
+        <img src="Images/marius.png" alt="Person 1">
+    </div>
+    <div class="text-content">
+        <h2>Marius Zavodski</h2>
+        <p>"I can't believe these places exists right in our city! It's a hidden sanctuary where every step unveils a new breathtaking view!”</p>
+    </div>
+</div>
+
+<div class="rectangle-container">
+    <div class="photo">
+        <img src="Images/anna.png" alt="Person 1">
+    </div>
+    <div class="text-content">
+        <h2>Anna Johnson</h2>
+        <p>"Hidden from the hustle and bustle, these spots are a treasure trove of natural wonders.”</p>
+    </div>
+</div>
+</div>
+
+
+<div class="reviews-title">
+    <h2>6 Important Tips before going outside:</h2>
+</div>
+      
+<div class="tips">
+    <div>
+        <h3>1. Plan your adventure</h3>
+        <p>Research the area, check trail maps, and be aware of any regulations before you go.</p>
+    </div>
+
+    <div>
+        <h3>2.  Tell someone about your plans</h3>
+        <p>Inform a friend or family member about your outdoor plans, including your destination and expected return time.</p>
+    </div>
+
+    <div>
+        <h3>3. Pack Essentials</h3>
+        <p>Bring essentials such as water, snacks, a map or GPS device, a first aid kit, and any necessary permits. Be prepared for unexpected situations.</p>
+    </div>
+
+    <div>
+        <h3>4. Wear Suitable Clothing</h3>
+        <p>Dress in layers and wear appropriate footwear for the terrain. Consider the season and potential weather changes during your outdoor activity.</p>
+    </div>
+
+    <div>
+        <h3>5. Respect Wildlife and Plants</h3>
+        <p>Keep a safe distance from wildlife, and avoid disturbing plants. Respect the natural environment and follow the rules.</p>
+    </div>
+
+    <div>
+        <h3>6. Check the Weather</h3>
+        <p>Before heading out, check the weather forecast for the day and be prepared for any changes in weather conditions.</p>
+    </div>
+</div>
+
+<!-- Back to Top Button -->
+<div class="backToTopButton" >
+<button id="back-to-top-btn"></button>
+</div>
+
+    
+
+
+<footer class="footer">
+    <div class="left-line"></div>
+    <div class="right-line"></div>
+    <div class="logo">
+        <!-- Replace 'your-logo.png' with the actual file path for your logo -->
+        <img src="Images/logowhite.png" alt="Logo" width="100">
+    </div>
+    <div class="text">
+        <p>Copyright 2023 Deni Kalenski. All rights reserved.</p>
+    </div>
+</footer>
+
     
 </body>
 </html>

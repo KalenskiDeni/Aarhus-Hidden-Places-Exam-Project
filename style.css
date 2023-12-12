@@ -1,14 +1,175 @@
-body {
-    background-image: url("Images/mainpageimg.png");
-
-    background-size: cover; /* Adjusts the size to cover the whole screen */
-
-    margin: 0;
-
-    font-family: Arial, sans-serif;
+/* Root Element */
+:root {
+    --primary-color: #3D5B16;
+    --secondary-color: #FFF;
+    --accent-color: #17475C;
+    --button-color: #89a06a;
+    --border-color: #527B1E;
+    --text-color: #A0B883;
   }
 
-  h1 {
+  /* Body */
+  .body {
+    background-image: url("Images/mainpageimg.png");
+    height: 1080px;
+    background-repeat: no-repeat;
+    background-color: var(--secondary-color);
+    background-size: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header img {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  
+  /* Navigation */
+  nav ul {
+    text-align: center;
+    font-family: Century Gothic;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 35px;
+  }
+  .primary-nav {
+    color: var(--secondary-color);
+  }
+
+.secondary-nav {
+    color: var(--primary-color);
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a.primary-nav {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+  
+  nav a.primary-nav:hover {
+    font-weight: 570;
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  
+  nav a.secondary-nav {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  nav a.secondary-nav:hover {
+    font-weight: 570;
+    border-bottom: 2px solid var(--primary-color);
+  }
+  
+
+  
+  /* Switch */
+  .switch {
+    position: absolute;
+    margin-left: 1320px;
+    margin-top: -62px;
+  }
+  
+  .switch > span {
+    position: absolute;
+    top: 15px;
+    text-align: center;
+    font-family: Century Gothic;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 85%;
+    letter-spacing: 0.2px;
+  }
+  
+  /* Toggle Switch */
+  input.check-toggle-round-flat:checked ~ .off {
+    color: var(--primary-color);
+  }
+  
+  input.check-toggle-round-flat:checked ~ .on {
+    color: var(--secondary-color);
+  }
+  
+  .switch > span.on {
+    padding-left: 11.5px;
+    color: var(--primary-color);
+  }
+  
+  .switch > span.off {
+    right: 0;
+    padding-right: 12.5px;
+    color: var(--secondary-color);
+  }
+  
+  .check-toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+  }
+  
+  .check-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  input.check-toggle-round-flat + label {
+    padding: 2px;
+    width: 73px;
+    height: 38px;
+    background-color: var(--primary-color);
+    border-radius: 60px;
+  }
+  
+  input.check-toggle-round-flat + label:before,
+  input.check-toggle-round-flat + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+  }
+  
+  input.check-toggle-round-flat + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: var(--primary-color);
+    border-radius: 60px;
+  }
+  
+  input.check-toggle-round-flat + label:after {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: 36px;
+    height: 34px;
+    background-color: var(--secondary-color);
+    border-radius: 52px;
+    transition: margin 0.4s;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  input.check-toggle-round-flat:checked + label:after {
+    margin-left: 33px;
+  }
+
+h1 {
+    width: 906px;
+    height: 53.673px;
+    flex-shrink: 0;
     color: #FFF;
     text-align: center;
     font-family: Lato;
@@ -17,43 +178,540 @@ body {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 25.28px;
-    width: 906px;
-    height: 53.673px;
-    flex-shrink: 0;
-    margin-top: 200px;
-    margin-left: 250px;
-  }
-
-
-header img {
-    width: 150px; /* Adjust the width as needed */
-    height: auto; /* Maintains the aspect ratio */
-    position: absolute; /* Set the position of the logo to absolute */
-    top: 30px; /* Adjust the top distance from the top of the header */
-    left: 30px; /* Adjust the left distance from the left of the header */
+    margin-top: 140px;
+    margin-left: 290px;
 }
-
-nav ul {
-    color: #FFF;
+  
+  /* Section */
+  .section {
+    background: transparent;
+  }
+  
+  .section::before {
+    animation: bounce 2.2s ease infinite;
+    bottom: 40px;
+    color: var(--secondary-color);
+    content: '╲╱';
+    height: 35px;
+    left: 50%;
+    line-height: 50px;
+    margin-left: -50px;
+    position: absolute;
+    text-align: center;
+    width: 100px;
+  }
+  
+  @keyframes bounce {
+    50% {
+      transform: translateY(-50%);
+    }
+  }
+  
+  /* Places */
+  .places {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Image Container */
+  .image-container {
+    width: 350px;
+    height: 527px;
+    margin-top: 750px;
+    margin-bottom: 200px;
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+  }
+  
+  /* Description */
+  .description {
+    position: absolute;
+    top: 540px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    padding: -50px;
+    text-align: center;
+  }
+  
+  .description p {
+    margin-top: 40px;
+    color: var(--accent-color);
+    text-align: center;
+    font-family: Century Gothic;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.704px;
+  }
+  
+  .description button {
+    border-radius: 37px;
+    background: var(--primary-color);
+    width: 218px;
+    height: 59px;
+    flex-shrink: 0;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 50px;
+    color: var(--secondary-color);
+    text-align: center;
+    font-family: Century Gothic;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.572px;
+  }
+  
+  .description button:hover {
+    background-color: var(--button-color);
+  }
+  
+  /* Reviews Title */
+  .reviews-title h1 {
+    color: var(--primary-color);
+    text-align: left;
+    font-family: Century Gothic;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.968px;
+    margin-left: 87px;
+    margin-bottom: -43px;
+    margin-top: 150px;
+  }
+  
+  /* Add Review Button */
+  .add-review-button button {
+    border-radius: 37px;
+    border: 2px solid var(--border-color);
+    background: var(--secondary-color);
+    color: var(--border-color);
     text-align: center;
     font-family: Century Gothic;
     font-size: 24px;
     font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.528px;
+    margin-left: 1100px;
+    width: 218px;
+    height: 59px;
+    margin-bottom: 60px;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+  }
+  
+  /* Rectangle Container */
+  .rectangle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 13px;
+    background: var(--primary-color);
+    width: 570px;
+    height: 230px;
+    flex-shrink: 0;
+    margin-left: 90px;
+  }
+  
+  /* Photo */
+  .photo img {
+    width: 145px;
+    height: auto;
+    margin-left: 32px;
+  }
+  
+  /* Text Content */
+  .text-content {
+    flex: 1;
+    margin-bottom: 10px;
+  }
+  
+  .text-content h2 {
+    width: 178px;
+    flex-shrink: 0;
+    color: var(--secondary-color);
+    text-align: left;
+    font-family: Century Gothic;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.528px;
+    margin-bottom: -9px;
+    margin-left: 33px;
+  }
+  
+  .text-content p {
+    width: 306px;
+    flex-shrink: 0;
+    color: var(--secondary-color);
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.352px;
+    margin-left: 33px;
+  }
+  
+  /* Reviews Title 2 */
+  .reviews-title h2 {
+    color: var(--primary-color);
+    text-align: left;
+    font-family: Century Gothic;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.968px;
+    margin-left: 87px;
+    margin-bottom: 30px;
+    margin-top: 150px;
+  }
+  
+  /* Tips */
+  .tips {
+    margin-left: 95px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .tips div {
+    margin-top: -9px;
+  }
+  
+  /* Tips Heading */
+  h3 {
+    color: var(--primary-color);
+    font-family: Century Gothic;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.616px;
+  }
+  
+  /* Tip Description */
+  .tips p {
+    width: 494px;
+    height: 124.096px;
+    flex-shrink: 0;
+    color: var(--text-color);
+    font-family: Century Gothic;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.44px;
+    margin-top: -24px;
+  }
+  
+  /* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    height: 100px;
+    margin-top: 50px;
+  }
+  
+  .footer .logo {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+  }
+  
+  .footer .logo img {
+    width: 100px; /* Adjusted width for the logo */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .footer .left-line,
+  .footer .right-line {
+    background-color: var(--secondary-color);
+    height: 2px;
+    width: 560px;
+    display: inline-block;
+    margin: 30px 70px 0px 66px;
+  }
+  
+  .footer .text {
+    display: inline-block;
+    text-align: left;
+    width: 624.812px;
+    height: 50px;
+    flex-shrink: 0;
+    color: var(--secondary-color);
+    text-align: left;
+    font-family: Century Gothic;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: -0.44px;
+    margin-right: 640px;
+    margin-top: -9px;
+    margin-bottom: -9px;
+  }
+  
+  
+.secondary-title {
+    color: var(--primary-color);
+    width: 682px;
+    height: 95px;
+    flex-shrink: 0;
+    color: #3D5B16;
+    font-family: Century Gothic;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 72px */
+    letter-spacing: -1.056px;
+    margin-left: 80px;
+    margin-top: 90px;
+    margin-bottom: -9px;
+}
+
+ 
+  .slider-container {
+    position: relative;
+    width: 1120px;
+    overflow: hidden;
+    margin-left: 150px;
+    align-items: center;
+    height: 470px;
+    margin-top: 5px;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider-slide {
+    flex: 0 0 100%;
+  }
+  
+  img {
+    width: 100%;
+    height: 700px;
+    margin-top: 5px;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: var(--primary-color);
+  }
+  
+  .prev-button {
+    left: 60px;
+    margin-top: 80px;
+  
+  }
+  
+  .next-button {
+    right: 60px;
+    margin-top: 80px;
+  }
+
+
+  .icon-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1120px;
+    height: 44px;
+    flex-shrink: 0;
+    color: #3D5B16;
+    font-family: Century Gothic;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 39px */
+    letter-spacing: -0.572px;
+    margin-left: 150px;
+    margin-top: 15px;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon img {
+    width: 30px; /* Adjust the size as needed */
+    height: 34px; /* Adjust the size as needed */
+    margin-right: 5px; /* Adjust the spacing between icon and description */
+  }
+  
+  .icon p {
+    margin: 0;
+    margin-right: 5px; /* Adjust the spacing between descriptions */
+
+  }
+
+  .general-description {
+    text-align: left;
+    margin-top: 20px; /* Adjust the spacing between icons and the general description */
+    width: 873px;
+    height: 155px;
+    flex-shrink: 0;
+    color: #3D5B16;
+    font-family: Century Gothic;
+    font-size: 26px;
+    font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    margin-top: 35px;
-}
+    line-height: 150%; /* 39px */
+    letter-spacing: -0.572px;
+    margin-left: 150px;
+    margin-bottom: 0px;
+  }
 
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
+  .icon1 {
+    display: flex;
+    align-items: center;
+    width: 473px;
+    height: 155px;
+    flex-shrink: 0;
+    color: #3D5B16;
+    font-family: Century Gothic;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.572px;
+    margin-left: 150px;
+    margin-top: -40px; /* Adjust the spacing between .icon1 and general description */
+    margin-bottom: -80px;
+  }
+  
+  .icon1 img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .icon1 strong {
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .icon1 p {
+    white-space: nowrap;
+    margin: 0;
+  }
+  
+/* Footer 2 */
+.footer2 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    height: 90px; /* Adjusted to allow dynamic content */
+    margin-top: 120px;
+  }
 
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
+  
+  .footer2 .logo2 img {
+    width: 100px; /* Adjusted width for the logo */
+    height: auto; /* Maintain aspect ratio */
+  }
 
-nav a:hover {
-    color: #A0B883; /* Change color on hover (you can customize this) */
-}
+  
+  .footer2 .right-line2 {
+    background-color: var(--secondary-color);
+    height: 2px;
+    width: 530px; /* Adjusted width for the lines */
+    margin-right: 10px;
+    margin-left: 750px;
+  }
+
+  .footer2 .left-line2 {
+    background-color: var(--secondary-color);
+    height: 2px;
+    width: 550px; /* Adjusted width for the lines */
+    margin-right: 10px; /* Adjusted spacing between lines */
+    margin-left: 70px;
+  }
+  
+  .footer2 .text2 {
+    text-align: left;
+    color: var(--secondary-color);
+    font-family: Century Gothic;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.44px;
+    margin-left: 80px;
+  }
+  
+  /* Body */
+  .bodyerror {
+    background-image: url("Images/error.png");
+    height: 1080px;
+    background-repeat: no-repeat;
+    background-color: var(--secondary-color);
+    background-size: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .backToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    margin-right: 14px;
+    margin-bottom: 7px;
+  }
+  
+  .backToTopButton button {
+    width: 72px;
+    height: 71px;
+    flex-shrink: 0;
+    border-radius: 41px;
+    border: 3px solid #527B1E;
+    color: #3D5B16;
+    background: #fff;
+    box-shadow: 0px 4px 7.2px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+  }
+  
+  .backToTopButton button::before {
+    content: '⌃'; 
+    font-size: 37px; /* Adjust the size as needed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+  
