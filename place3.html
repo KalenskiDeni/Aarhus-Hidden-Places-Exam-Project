@@ -4,139 +4,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aarhus Hidden places</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <title>Aarhus Hidden places</title>
 </head>
-<script src="script.js"></script>
 
 <body>
 
 
 
     <header>
-        <!-- My logo goes here -->
-        <img src="Images/logogreen.png" alt="Logo">
+        <a href="index.html">
+            <!-- Logo -->
+            <img src="Images/logogreen.png" alt="Logo">
+        </a>
 
+        <!-- Navigation -->
         <nav class="secondary-nav">
             <ul class="secondary-nav">
-                <li><a href="#home" class="secondary-nav">Home</a></li>
-                <li><a href="#home" class="secondary-nav">Fugletårn</a></li>
-                <li><a href="#home" class="secondary-nav">Park Eskelunden</a></li>
-                <li><a href="#home" class="secondary-nav">Båken</a></li>
+                <li><a href="index.html" class="secondary-nav">Home</a></li>
+                <li><a href="place1.html" class="secondary-nav">Fugletårn</a></li>
+                <li><a href="place2.html" class="secondary-nav">Park Eskelunden</a></li>
+                <li><a href="place3.html" class="secondary-nav3">Båken</a></li>
             </ul>
         </nav>
 
-        <div class="switch">
-            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
-            <label for="language-toggle"></label>
-            <span class="on">DK</span>
-            <span class="off">EN</span>
-        </div>
-
-        <div class="section"></div>
+        <!-- Switch language button -->
+        <a href="error.html">
+            <div class="switch">
+                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                <label for="language-toggle"></label>
+                <span class="on">EN</span>
+                <span class="off">DK</span>
+            </div>
+        </a>
 
     </header>
 
-    <h1 class="secondary-title"> ❮ Båken- Panorama terrace</h1>
+    <!-- Title Place 3 -->
+    <a style="text-decoration: none" href="index.html">
+        <h1 class="secondary-title-place3"> ❮ Båken- Panorama terrace</h1>
+    </a>
 
-    
+
+    <!-- Image Slider -->
     <div class="slider-container">
         <div class="slider">
-          <div class="slider-slide"><img src="Images/place3/1.jpg" alt="Image 1"></div>
-          <div class="slider-slide"><img src="Images/place3/2.jpg" alt="Image 2"></div>
-          <div class="slider-slide"><img src="Images/place3/3.jpg" alt="Image 3"></div>
-          <div class="slider-slide"><img src="Images/place3/4.jpg" alt="Image 4"></div>
-          <div class="slider-slide"><img src="Images/place3/5.jpg" alt="Image 5"></div>
-          <div class="slider-slide"><img src="Images/place3/6.jpg" alt="Image 6"></div>
-          <div class="slider-slide"><img src="Images/place3/7.jpg" alt="Image 7"></div>
+            <div class="slider-slide"><img src="Images/place3/1.jpg" alt="Image 1"></div>
+            <div class="slider-slide"><img src="Images/place3/2.jpg" alt="Image 2"></div>
+            <div class="slider-slide"><img src="Images/place3/3.jpg" alt="Image 3"></div>
+            <div class="slider-slide"><img src="Images/place3/4.jpg" alt="Image 4"></div>
+            <div class="slider-slide"><img src="Images/place3/5.jpg" alt="Image 5"></div>
+            <div class="slider-slide"><img src="Images/place3/6.jpg" alt="Image 6"></div>
+            <div class="slider-slide"><img src="Images/place3/7.jpg" alt="Image 7"></div>
         </div>
-      
-      </div>
 
-     <button class="prev-button" onclick="prevSlide()">❮</button>
-     <button class="next-button" onclick="nextSlide()">❯</button> <div class="icon-container">
+    </div>
+
+    <!-- Left and Right Arrow -->
+    <button class="prev-button" onclick="prevSlide()">❮</button>
+    <button class="next-button" onclick="nextSlide()">❯</button>
+    <div class="icon-container">
 
 
 
+        <!-- Icons and Information -->
+        <div class="icon">
+            <img src="Images/location.png" alt="Icon 1">
+            <p>8250 Egå, Denmark</p>
+        </div>
 
         <div class="icon">
-          <img src="Images/location.png" alt="Icon 1">
-          <p>8250 Egå, Denmark</p>
+            <img src="Images/weather.png" alt="Icon 2">
+            <p>-2° Cloudy</p>
         </div>
-      
-        <div class="icon">
-          <img src="Images/weather.png" alt="Icon 2">
-          <p>-2° Cloudy</p>
-        </div>
-      
-        <div class="icon">
-          <img src="Images/activity.png" alt="Icon 3">
-          <p>Not busy</p>
-        </div>
-      
-        <div class="icon">
-          <img src="Images/time.png" alt="Icon 4">
-          <p> Depends on you</p>
-        </div>
-      </div>
 
-      <p class="general-description">Nestled in the heart of Aarhus lies a hidden special place for nature lovers - a natural haven with a wooden building designed for birdwatching experiences. Tucked away from the bustling city, this secret retreat offers a perfect blend of serenity and wildlife exploration.</p>
+        <div class="icon">
+            <img src="Images/activity.png" alt="Icon 3">
+            <p>Not busy</p>
+        </div>
 
-      <div class="icon1">
+        <div class="icon">
+            <img src="Images/time.png" alt="Icon 4">
+            <p> Depends on you</p>
+        </div>
+    </div>
+
+    <p class="general-description">Nestled in the heart of Aarhus lies a hidden special place for nature lovers - a
+        natural haven with a wooden building designed for birdwatching experiences. Tucked away from the bustling city,
+        this secret retreat offers a perfect blend of serenity and wildlife exploration.</p>
+
+    <div class="icon1">
         <img src="Images/visit.png" alt="Icon 5">
         <p><strong>Best time to visit:</strong> 15 February- 15 November</p>
-      </div>
+    </div>
 
 
-
-      <div class="reviews-title">
+    <!-- Reviews Title -->
+    <div class="reviews-title">
         <h1>Check out some reviews:</h1>
     </div>
-    
+
+
+
+    <!-- Add a review button -->
     <div class="add-review-button">
-        <button>+ Add your own</button>
-    </div>
-    
-    <div class="container">
-    <div class="rectangle-container">
-        <div class="photo">
-            <img src="Images/marius.png" alt="Person 1">
+        <button id="openPopup">+ Add your own</button>
+
+
+
+        <!-- Reviews -->
+        <div class="container">
+            <div class="arrow left" id="prevArrow">❮</div>
+
+            <!-- Review 1 -->
+            <div class="rectangle-container" id="rectangleContainer1">
+                <div class="photo" id="photoContainer1">
+                    <img src="Images/lucas.png" alt="Photo 1">
+                </div>
+                <div class="text-content" id="textContentContainer1">
+                    <h2>Lucas Vincens</h2>
+                    <p>"Aarhus hides a coastal retreat that's nothing short of spectacular. The tranquil ambiance by the
+                        sea is a balm for the soul."</p>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="rectangle-container" id="rectangleContainer2">
+                <div class="photo" id="photoContainer2">
+                    <img src="Images/olivia.png" alt="Photo 2">
+                </div>
+                <div class="text-content" id="textContentContainer2">
+                    <h2>Olivia Bernardo</h2>
+                    <p>"This hidden spot next to the sea is a haven of serenity. The expansive view of the sea is simply
+                        breathtaking."</p>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="rectangle-container" id="rectangleContainer3">
+                <div class="photo" id="photoContainer3">
+                    <img src="Images/patrisia.png" alt="Photo 3">
+                </div>
+                <div class="text-content" id="textContentContainer3">
+                    <h2>Patrisia Anderson</h2>
+                    <p>"This hidden oasis by the sea offers a front-row seat to nature's grandeur. The view of the ocean
+                        is amazing, especially during sunrise and sunset."</p>
+                </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="rectangle-container" id="rectangleContainer4">
+                <div class="photo" id="photoContainer4">
+                    <img src="Images/sofka.png" alt="Photo 4">
+                </div>
+                <div class="text-content" id="textContentContainer4">
+                    <h2>Sophie Grecu</h2>
+                    <p>"Stumbling upon this hidden place next to the sea felt like finding a secret sunset paradise. The
+                        colors reflecting off the water are absolutely magical."</p>
+                </div>
+            </div>
+
+            <!-- Arrows -->
+            <div class="arrow right" id="nextArrow">❯</div>
         </div>
-        <div class="text-content">
-            <h2>Marius Zavodski</h2>
-            <p>"I can't believe these places exists right in our city! It's a hidden sanctuary where every step unveils a new breathtaking view!”</p>
-        </div>
     </div>
-    
-    <div class="rectangle-container">
-        <div class="photo">
-            <img src="Images/anna.png" alt="Person 1">
-        </div>
-        <div class="text-content">
-            <h2>Anna Johnson</h2>
-            <p>"Hidden from the hustle and bustle, these spots are a treasure trove of natural wonders.”</p>
-        </div>
-    </div>
-    </div>
+
+
 
     <!-- Back to Top Button -->
-<div class="backToTopButton" >
-    <button id="back-to-top-btn"></button>
+    <div class="backToTopButton">
+        <button id="back-to-top-btn"></button>
     </div>
 
+
+    <!-- Pop up -->
+    <div class="overlay" id="overlay">
+        <div class="popup" id="createAccountPopup">
+            <div class="popup-content">
+                <span class="close" id="closePopup">&times;</span>
+                <h2>Create Account</h2>
+                <form>
+                    <div class="flex-container">
+                        <div class="input-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Write your name here..." required>
+                        </div>
+                        <div class="input-group">
+                            <label for="surname">Surname:</label>
+                            <input type="text" id="surname" name="surname" placeholder="Write your surname here..."
+                                required>
+                        </div>
+                    </div>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Write your email here..." required>
+
+                    <div class="flex-container">
+                        <div class="input-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password"
+                                placeholder="Write your password here..." required>
+                        </div>
+                        <div class="input-group">
+                            <label for="repeatPassword">Repeat Password:</label>
+                            <input type="password" id="repeatPassword" name="repeatPassword"
+                                placeholder="Repeat your password here..." required>
+                        </div>
+                    </div>
+
+                    <button id="createButton" class="popup-button" type="button">Create</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Pop up -->
+    <div class="overlay" id="nextOverlay">
+        <div class="popup" id="nextPopup">
+            <div class="popup-content">
+                <span class="close" id="closeNextPopup">&times;</span>
+                <h2>Share your experience</h2>
+
+                <input class="input-message" id="message" name="" placeholder="Leave your review here..." required>
+                <button class="next-popup-button" id="closeNextPopupButton">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Pop up -->
+    <div class="overlay" id="thirdOverlay">
+        <div class="popup" id="thirdPopup">
+            <div class="popup-content">
+                <span class="close" id="closeThirdPopup">&times;</span>
+                <h2>Your review is submitted!</h2>
+                <img src="Images/check.png" alt="check">
+                <h2>Thank you for helping us to improve your experience!</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
     <footer class="footer2">
         <div class="left-line2"></div>
         <div class="right-line2"></div>
         <div class="logo2">
-            <!-- Replace 'your-logo.png' with the actual file path for your logo -->
-            <img src="Images/logowhite.png" alt="Logo" width="100">
+            <a href="index.html">
+                <img src="Images/logowhite.png" alt="Logo" width="100">
+            </a>
         </div>
         <div class="text2">
             <p>Copyright 2023 Deni Kalenski. All rights reserved.</p>
         </div>
-      </footer>
-      
+    </footer>
+
 
 </body>
 
