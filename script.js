@@ -228,9 +228,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function toggleNav() {
-  const navList = document.querySelector('.primary-nav ul');
+  const navList = document.querySelector('.primary-nav ul', '.secondary-nav-ul');
   navList.classList.toggle('active');
-  
+
 }
 
 
@@ -270,11 +270,11 @@ function moveButtons() {
   const container = document.querySelector('.container');
 
   if (window.innerWidth <= 768) {
-      container.appendChild(smallerScreenButton); // Move the smaller screen button to the end of the container
+    container.appendChild(smallerScreenButton); // Move the smaller screen button to the end of the container
   } else {
-      // If the screen is larger, ensure the buttons are in their initial positions
-      container.insertBefore(largerScreenButton, container.querySelector('.reviews-title'));
-      container.appendChild(smallerScreenButton);
+    // If the screen is larger, ensure the buttons are in their initial positions
+    container.insertBefore(largerScreenButton, container.querySelector('.reviews-title'));
+    container.appendChild(smallerScreenButton);
   }
 }
 
