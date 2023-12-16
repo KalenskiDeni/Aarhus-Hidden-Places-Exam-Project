@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <script src="script.js"></script>
     <title>Aarhus Hidden places</title>
 </head>
@@ -12,11 +13,19 @@
 <body>
 
 
+    <div class="burger-menu" onclick="toggleNav()">
+        <div class="bar1"></div>
+        <div class="bar1"></div>
+        <div class="bar1"></div>
+    </div>
+
 
     <header>
+
+
         <!-- Logo -->
         <a href="index.html">
-            <img src="Images/logogreen.png" alt="Logo">
+            <img src="Images/logogreen.png" class="logogreen" alt="Logo">
         </a>
 
         <!-- Navigation -->
@@ -100,7 +109,7 @@
 
 
     <!-- Reviews Title -->
-    <div class="reviews-title">
+    <div class="reviews-title1 h1">
         <h1>Check out some reviews:</h1>
     </div>
 
@@ -171,75 +180,77 @@
     <!-- Back to Top Button -->
     <div class="backToTopButton">
         <button id="back-to-top-btn"></button>
+    </div>
 
 
-        <!-- Pop up -->
-        <div class="overlay" id="overlay">
-            <div class="popup" id="createAccountPopup">
-                <div class="popup-content">
-                    <span class="close" id="closePopup">&times;</span>
-                    <h2>Create Account</h2>
-                    <form>
-                        <div class="flex-container">
-                            <div class="input-group">
-                                <label for="name">Name:</label>
-                                <input type="text" id="name" name="name" placeholder="Write your name here..." required>
-                            </div>
-                            <div class="input-group">
-                                <label for="surname">Surname:</label>
-                                <input type="text" id="surname" name="surname" placeholder="Write your surname here..."
-                                    required>
-                            </div>
+    <!-- Pop up -->
+    <div class="overlay" id="overlay">
+        <div class="popup" id="createAccountPopup">
+            <div class="popup-content">
+                <span class="close" id="closePopup">&times;</span>
+                <h2>Create Account</h2>
+                <form>
+                    <div class="flex-container">
+                        <div class="input-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Write your name here..." required>
                         </div>
-
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" placeholder="Write your email here..." required>
-
-                        <div class="flex-container">
-                            <div class="input-group">
-                                <label for="password">Password:</label>
-                                <input type="password" id="password" name="password"
-                                    placeholder="Write your password here..." required>
-                            </div>
-                            <div class="input-group">
-                                <label for="repeatPassword">Repeat Password:</label>
-                                <input type="password" id="repeatPassword" name="repeatPassword"
-                                    placeholder="Repeat your password here..." required>
-                            </div>
+                        <div class="input-group">
+                            <label for="surname">Surname:</label>
+                            <input type="text" id="surname" name="surname" placeholder="Write your surname here..."
+                                required>
                         </div>
+                    </div>
 
-                        <button id="createButton" class="popup-button" type="button">Create</button>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Write your email here..." required>
 
-                    </form>
-                </div>
+                    <div class="flex-container">
+                        <div class="input-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password"
+                                placeholder="Write your password here..." required>
+                        </div>
+                        <div class="input-group">
+                            <label for="repeatPassword">Repeat Password:</label>
+                            <input type="password" id="repeatPassword" name="repeatPassword"
+                                placeholder="Repeat your password here..." required>
+                        </div>
+                    </div>
+
+                    <button id="createButton" class="popup-button" type="button">Create</button>
+
+                </form>
             </div>
         </div>
+    </div>
 
-        <!-- Second Pop up -->
-        <div class="overlay" id="nextOverlay">
-            <div class="popup" id="nextPopup">
-                <div class="popup-content">
-                    <span class="close" id="closeNextPopup">&times;</span>
-                    <h2>Share your experience</h2>
+    <!-- Second Pop up -->
+    <div class="overlay" id="nextOverlay">
+        <div class="popup" id="nextPopup">
+            <div class="popup-content">
+                <span class="close" id="closeNextPopup">&times;</span>
+                <h2>Share your experience</h2>
 
-                    <input class="input-message" id="message" name="" placeholder="Leave your review here..." required>
-                    <button class="next-popup-button" id="closeNextPopupButton">Submit</button>
-                </div>
+
+                <input class="input-message" id="message" name="" placeholder="Leave your review here..." required>
+                <button class="next-popup-button" id="closeNextPopupButton">Submit</button>
             </div>
         </div>
+    </div>
 
-        <!-- Third Pop up -->
-        <div class="overlay" id="thirdOverlay">
-            <div class="popup" id="thirdPopup">
-                <div class="popup-content">
-                    <span class="close" id="closeThirdPopup">&times;</span>
-                    <h2>Your review is submitted!</h2>
-                    <img src="Images/check.png" alt="check">
-                    <h2>Thank you for helping us to improve your experience!</h2>
-
-                </div>
+    <!-- Third Pop up -->
+    <div class="overlay" id="thirdOverlay">
+        <div class="popup" id="thirdPopup">
+            <div class="popup-content">
+                <span class="close" id="closeThirdPopup">&times;</span>
+                <h2>Your review is submitted!</h2>
+                <img src="Images/check.png" alt="check">
+                <h2>Thank you for helping us to improve your experience!</h2>
             </div>
         </div>
+    </div>
+
 
 
 

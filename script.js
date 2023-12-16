@@ -220,3 +220,68 @@ document.addEventListener("DOMContentLoaded", function () {
     openThirdPopup();
   });
 });
+
+
+
+
+
+
+
+function toggleNav() {
+  const navList = document.querySelector('.primary-nav ul');
+  navList.classList.toggle('active');
+  
+}
+
+
+
+window.onload = function () {
+  // Get the body element
+  var body = document.body;
+
+  // Check if it's the main page before applying the background image logic
+  if (body.classList.contains('body')) {
+    // Set the initial background image
+    setBodyBackground();
+
+    // Add a listener for window resize events
+    window.addEventListener('resize', setBodyBackground);
+
+    // Function to set the background image based on screen width
+    function setBodyBackground() {
+      // Check if it's the error page
+      if (body.classList.contains('bodyerror')) {
+        body.style.backgroundImage = 'url("Images/404mobile.png")';
+      } else if (window.innerWidth <= 768) {
+        body.style.backgroundImage = 'url("Images/mobilemain.png")';
+      } else {
+        body.style.backgroundImage = 'url("Images/mainpageimg.png")';
+      }
+    }
+  }
+};
+
+
+
+// JavaScript to move the buttons dynamically based on the screen width
+function moveButtons() {
+  const largerScreenButton = document.querySelector('.larger-screen');
+  const smallerScreenButton = document.querySelector('.smaller-screen');
+  const container = document.querySelector('.container');
+
+  if (window.innerWidth <= 768) {
+      container.appendChild(smallerScreenButton); // Move the smaller screen button to the end of the container
+  } else {
+      // If the screen is larger, ensure the buttons are in their initial positions
+      container.insertBefore(largerScreenButton, container.querySelector('.reviews-title'));
+      container.appendChild(smallerScreenButton);
+  }
+}
+
+// Initial arrangement on page load
+moveButtons();
+
+// Adjust the arrangement on window resize
+window.addEventListener('resize', moveButtons);
+
+

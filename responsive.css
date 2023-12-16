@@ -1,0 +1,679 @@
+/* General styles for all screens */
+/* Root Element */
+:root {
+    --primary-color: #3D5B16;
+    --secondary-color: #FFF;
+    --accent-color: #17475C;
+    --button-color: #89a06a;
+    --border-color: #527B1E;
+    --text-color: #A0B883;
+}
+
+/* Body */
+body {
+    background-color: var(--secondary-color);
+}
+
+h2 {
+    font-size: 0px;
+ 
+}
+
+h1.error{
+    font-size: 0px;
+}
+
+body.page1 {
+    background-image: url("Images/mainpageimg.png");
+
+  }
+
+
+
+/* Navigation /Underline and bold nav menu to specific pages/ */
+.primary-nav {
+    color: var(--secondary-color);
+}
+
+.secondary-nav {
+    color: var(--primary-color);
+}
+
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: 570;
+}
+
+/* Heading 1 */
+h1 {
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 25.28px;
+    margin-top: 140px;
+    margin-left: 0;
+}
+
+
+
+
+
+
+/* Language switch button */
+.switch {
+    position: absolute;
+    margin-left: 1320px;
+    margin-top: -62px;
+}
+
+.switch>span {
+    position: absolute;
+    top: 15px;
+    text-align: center;
+    font-family: Century Gothic;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 85%;
+    letter-spacing: 0.2px;
+}
+
+
+/* Places */
+.places {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    margin-top: 540px;
+    margin-bottom: 80px;
+}
+
+/* Image Container */
+.image-container {
+    width: 350px;
+    height: 580px;
+    margin: 20px; /* Add some spacing between image containers */
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%; /* Adjusted to cover the container */
+    object-fit: cover;
+}
+
+/* Description */
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px; /* Add padding for better readability */
+    text-align: center;
+}
+
+.description p {
+    margin-top: 10px; /* Adjusted margin for better spacing */
+    color: var(--accent-color);
+    font-family: Century Gothic;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.4px;
+}
+
+.description button {
+    margin-top: 10px; /* Adjusted margin for better spacing */
+}
+
+
+.reviews-title h1 {
+    color: var(--primary-color);
+    text-align: left;
+    font-family: Century Gothic;
+    line-height: 150%;
+    letter-spacing: -0.968px;
+    margin-left: 87px;
+    margin-bottom: -43px;
+    margin-top: 250px;
+}
+
+
+
+
+
+/* Media queries */
+/* For desktop screens and smaller devices */
+@media only screen and (max-width: 1200px) {
+    /* Adjust styles for desktop screens */
+    body {
+        background-image: url("Images/mainpageimg.png");
+        /* Add any other adjustments for desktop screens if needed */
+    }
+    .image-container {
+        width: 300px; /* Adjust the width for smaller screens */
+        height: 450px; /* Adjust the height for smaller screens */
+    }
+    .reviews-title h1 {
+        font-size: 36px; /* Adjust the font size for smaller screens */
+        margin-left: 50px; /* Adjust margin for smaller screens */
+    }
+
+
+    .reviews-title h1 {
+        color: var(--primary-color);
+        text-align: left;
+        font-family: Century Gothic;  
+    }
+ 
+}
+
+/* For smaller devices like tablets */
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for small screens */
+    body {
+        width: 100%;
+        height: 200px; /* Allow the height to adjust based on content */
+        background-image: url("Images/mobilemain.png");
+        background-color: #FCFFF7;
+        /* Add any other adjustments for small screens if needed */
+    }
+ body.bodyerror h1 {
+        display: block; /* or any other value that fits your design */
+    }
+
+    .bodyerror {
+        background-image: url("Images/404mobile.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center; /* Center the background image */
+        height: 100vh; /* Set the height to cover the entire viewport */
+        background-color: var(--secondary-color);
+        margin: 0; /* Reset margin to zero */
+        padding: 0; /* Reset padding to zero */
+    }
+    /* Burger menu styles */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+}
+
+
+
+
+.bar1 {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-color); /* Change to white */
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white; /* Change to white */
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+    
+    /* ... (Other styles for small screens) */
+    body.bodyerror h1 {
+       
+        width: 433px;
+        height: 50px;
+        margin-top: -600px;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: Century Gothic;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 40px;
+            
+    }
+    
+
+    .burger-menu {
+        display: block;
+    }
+    .primary-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0; /* Adjusted for right side */
+        width: 100%;
+        background-color: var(--primary-color); /* Change to white */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Update box-shadow color */
+    }
+
+    .secondary-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0; /* Adjusted for right side */
+        width: 100%;
+        background-color: var(--primary-color); /* Change to white */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Update box-shadow color */
+    }
+    
+    
+    .primary-nav ul.active {
+        display: flex;
+    }
+
+    .secondary-nav ul.active {
+        display: flex;
+    }
+    
+    .primary-nav li {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        color: var(--primary-color); /* Use primary color for text */
+        border-bottom: 2px solid var(--primary-color); /* Add a border with primary color */
+    }
+    
+    .secondary-nav li {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        color: var(--primary-color); /* Use primary color for text */
+        border-bottom: 2px solid var(--primary-color); /* Add a border with primary color */
+    }
+    
+
+
+
+
+
+
+
+    .logo {
+        width: 110px;
+        height: 28px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 175px;
+    }
+
+
+    h1 {
+        width: 387px;
+        height: 24px;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: Lato;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 5.85px;
+        margin-left: 65px;
+        margin-top: 230px;
+    }
+
+    h2 {
+        width: 387px;
+        height: 83px;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: Lato;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 6.3px;
+        margin-left: 60px;
+        margin-top: -10px;
+    }
+
+    .switch {
+        margin-left: 20px; /* Adjusted for small screens */
+        margin-top: -200px;
+    } 
+
+    
+    .image-container {
+        width: 340px; /* Adjust the width to full width for small screens */
+        height: 570px; /* Allow the height to adjust based on content */
+        margin-top: 210px;
+    }
+
+    .description {
+        position: static; /* Remove absolute positioning for small screens */
+        padding: 25px; /* Adjust padding for better readability */
+        margin-top: -60px;
+    }
+
+    .description p {
+        font-size: 32px; /* Adjust font size for small screens */
+    }
+
+    .reviews-title h1 {
+        font-size: 29px; /* Adjust the font size for even smaller screens */
+        margin-left: 68px; /* Adjust margin for even smaller screens */
+        margin-top: 190px; /* Adjust top margin for better spacing */
+        margin-bottom: -80px; /* Adjust bottom margin for better spacing */
+    }
+/* Reviews Container */
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column; /* Stack items vertically */
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+/* UI Card */
+.rectangle-container {
+    border-radius: 13px;
+    background: var(--primary-color);
+    flex-shrink: 0;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background: var(--primary-color);
+    width: 90%; /* Adjusted for responsiveness */
+    max-width: 570px; /* Maximum width for larger screens */
+    margin: 10px; /* Adjusted for spacing between cards */
+    height: 160px;
+}
+
+.photo img {
+    width: 110px; /* Make the image responsive */
+    height: 110px;
+}
+
+.text-content {
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.text-content h2 {
+    width: 100%; /* Make the text responsive */
+    flex-shrink: 0;
+    color: var(--secondary-color);
+    text-align: left;
+    font-family: Century Gothic;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.528px;
+    margin-bottom: 0px;
+    margin-left: 26px; /* Adjusted for smaller screens */
+    margin-top: 17px;
+}
+
+.text-content p {
+    width: 200px; /* Make the text responsive */
+    flex-shrink: 0;
+    color: var(--secondary-color);
+    font-family: Century Gothic;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.352px;
+    margin-left: 26px; /* Adjusted for smaller screens */
+    margin-top: -57px;
+}
+.arrow {
+    display: none; /* Hide arrows for smaller screens */
+}
+.reviews-title h2{
+    font-size: 29px; /* Adjust the font size for even smaller screens */
+    margin-left: 68px; /* Adjust margin for even smaller screens */
+    margin-top: 190px; /* Adjust top margin for better spacing */
+    margin-bottom: 40px; /* Adjust bottom margin for better spacing */
+}
+.tips {
+    display: flex;
+    flex-direction: column; /* Display tips in a single column */
+    align-items: flex-start; /* Align tips to the start of the column */
+}
+
+.tips div {
+    width: 200px;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    padding: 0 10px; /* Adjust padding for better responsiveness */
+    margin-bottom: -10px; /* Adjust the space between the tips */
+}
+
+.tips h3 {
+    font-size: 23px; /* Adjust font size for smaller screens */
+    margin-top: 10px; /* Add some space between the title and the paragraph */
+    margin-left: -35px;
+    width: 320px;
+}
+
+.tips p {
+    width: 360px;
+    font-size: 17px; /* Adjust font size for smaller screens */
+    margin-bottom: 10px; /* Remove default margin for paragraphs */
+    margin-left: -35px;
+}
+.footer {
+    text-align: center;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 460px;
+}
+
+.footer p {
+    font-size: 15px;
+    margin-top: 7px;
+  color: #fff;
+  margin-left: 400px;
+  width: 600px;
+}
+
+.left-line,
+.right-line {
+    width: 100%;
+    height: 1px;
+
+}
+
+.logo img {
+    width: 460px; /* Adjust the logo size for larger screens */
+margin-left: -360px;
+margin-top: 15px;
+}
+
+.primary-nav {
+    color: var(--primary-color);
+}
+/* Logo on the error page */
+.bodyerror .logo {
+    margin-left: 190px; /* Adjust the margin as needed */
+}
+
+/* Burger menu on the error page */
+.bodyerror .burger-menu {
+    display: block;
+}
+
+/* Switch language button on the error page */
+.bodyerror .switch {
+    margin-left: 20px; /* Adjusted for small screens */
+    margin-top: -200px;
+}
+
+
+
+.secondary-nav {
+    display: none; /* Hide the secondary navigation on smaller screens */
+}
+
+
+
+.secondary-title-place1,
+.secondary-title-place2,
+.secondary-title-place3 {
+    width: 350px;
+    height: 56px;
+    flex-shrink: 0;
+    color: #3D5B16;
+    font-family: Century Gothic;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 37.5px */
+    letter-spacing: -0.55px;
+    margin-left: 20px;
+}
+
+.secondary-title-place2 {
+    margin-left: -17px;
+}
+
+.secondary-title-place3 {
+    margin-left: 43px;
+}
+
+.slider-container {
+    width: 380px;
+    height: 182px;
+    flex-shrink: 0;
+    margin-left: 55px;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%; /* Make the image fill the container horizontally */
+    height: 100%; /* Make the image fill the container vertically */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    display: block; /* Remove extra space below the image */
+}
+
+.general-description {
+    width: 350px;
+    height: 274px;
+    flex-shrink: 0;
+    color: #3D5B16;
+    font-family: Century Gothic;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 28.5px */
+    letter-spacing: -0.418px;
+    margin-left: 55px;
+    margin-top: -380px;
+}
+
+/* Style for the container div */
+
+  /* Style for the image */
+
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    margin-top: 355px; /* Adjust the margin-top value */
+}
+
+.icon img {
+    width: 30px;
+    height: 23px;
+    flex-shrink: 0;
+    margin-left: -70px;
+
+}
+
+/* Style for the paragraph */
+.icon p {
+    width: 284px;
+    height: 44px;
+    flex-shrink: 0;
+    color: #3D5B16;
+    font-family: Century Gothic;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.44px;
+    margin-top: -7px;
+    margin-bottom: -2px;
+    font-size: 25px;
+}
+
+
+.icon1 p {
+    width: 284px;
+    height: 44px;
+    flex-shrink: 0;
+    color: #3D5B16;
+    font-family: Century Gothic;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.44px;
+    margin-top: 300px;
+    font-size: 25px;
+
+}
+.icon1 img {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    margin-left: -92px;
+    margin-top: 285px;
+}
+.reviews-title1 h1{
+    margin-top: 240px;
+    font-size: 29px; /* Adjust the font size for even smaller screens */
+    margin-left: 68px; /* Adjust margin for even smaller screens */
+    margin-bottom: -80px; /* Adjust bottom margin for better spacing */
+}
+
+
+  .prev-button,
+  .next-button {
+    display: none; /* Hide arrows for smaller screens */
+}
+
+
+.logogreen {
+    width: 110px;
+    height: 28px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 175px;
+}
+
+}

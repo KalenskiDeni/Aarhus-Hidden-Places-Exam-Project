@@ -6,20 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="responsive.css">
     <title>Aarhus Hidden places</title>
 </head>
 
 <body class="body">
+ 
+    <div class="burger-menu" onclick="toggleNav('primary-nav')">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
 
     <header>
 
         <!-- Logo -->
-        <a href="index.html">
-            <img src="Images/logowhite.png" alt="Logo">
-        </a>
+<a href="index.html" class="logo-container">
+    <img src="Images/logowhite.png" alt="Logo" class="logo">
+</a>
+
 
 
         <!-- Navigation Bar -->
+        
         <nav class="primary-nav">
             <ul class="primary-nav">
                 <li><a href="index.html" class="primary-nav">Home</a></li>
@@ -29,6 +38,7 @@
             </ul>
         </nav>
 
+    
 
         <!-- Language button -->
         <a href="error.html">
@@ -48,6 +58,7 @@
 
     <!-- Heading 1 -->
     <h1>HIDDEN PLACES</h1>
+      <h2>AARHUS</h2>
 
 
     <!-- Places -->
@@ -88,7 +99,7 @@
     </div>
 
     <!-- Add a review button -->
-    <div class="add-review-button">
+    <div class="add-review-button larger-screen">
         <button id="openPopup">+ Add your own</button>
 
 
@@ -148,7 +159,6 @@
             <div class="arrow right" id="nextArrow">❯</div>
         </div>
     </div>
-
 
 
 

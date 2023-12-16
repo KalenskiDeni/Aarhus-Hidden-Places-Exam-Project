@@ -5,18 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Aarhus Hidden places</title>
 </head>
 
 <body class="bodyerror">
 
+
+    <!-- <div class="burger-menu" onclick="toggleNav('primary-nav')">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div> -->
+
+    <div id="burger-menu">
+        <span></span>
+      </div>
+
     <header class="bodyerror">
         <!-- Logo -->
         <a href="index.html">
-            <img src="Images/logowhite.png" alt="Logo">
+            <img src="Images/logowhite.png" class="logogreen" alt="Logo">
         </a>
 
         <!-- Navigation -->
+        <div id="menu">
         <nav class="primary-nav">
             <ul class="primary-nav">
                 <li><a href="index.html" class="primary-nav">Home</a></li>
@@ -25,6 +38,7 @@
                 <li><a href="place3.html" class="primary-nav">Båken</a></li>
             </ul>
         </nav>
+        </div>
 
         <!-- Switch language button -->
         <a href="index.html">
@@ -35,11 +49,12 @@
                 <span class="off">DK</span>
             </div>
         </a>
-
+        
+    
 
     </header>
 
-
+    <h1 class="error">This page cannot be found...</h1>
 </body>
 
 </html>

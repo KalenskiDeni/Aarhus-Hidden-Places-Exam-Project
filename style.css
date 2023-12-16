@@ -45,7 +45,9 @@ nav ul {
     color: var(--secondary-color);
 
 }
-
+body:not(.page1) {
+    background-image: none;
+}
 
 .secondary-nav {
     color: var(--primary-color);
@@ -331,6 +333,19 @@ h1 {
     margin-top: 150px;
 }
 
+.reviews-title1 h1{
+    color: var(--primary-color);
+    text-align: left;
+    font-family: Century Gothic;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.968px;
+    margin-left: 87px;
+    margin-bottom: -43px;
+    margin-top: 150px;
+}
 /* Add Review Button */
 .add-review-button button {
     border-radius: 37px;
@@ -668,7 +683,7 @@ img {
 }
 
 .icon img {
-    width: 30px;
+    width: 36px;
     height: 34px;
     margin-right: 5px;
 }
@@ -678,6 +693,13 @@ img {
     margin-right: 5px;
 
 }
+
+
+
+
+
+
+
 
 /* General description of the places */
 .general-description {
@@ -719,7 +741,16 @@ img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
+    
 }
+
+.icon img {
+    width: 43px;
+    height: 33px;
+    margin-right: 10px;
+    
+}
+
 
 .icon1 strong {
     white-space: nowrap;
@@ -731,6 +762,59 @@ img {
     white-space: nowrap;
     margin: 0;
 }
+
+/* Customising the first and the last icon using child option */
+.icon-container .icon:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container .icon:first-child img {
+    width: 27px;
+    height: 33px;
+    margin-right: 10px;
+}
+
+.icon-container .icon:first-child p {
+    white-space: nowrap;
+    margin: 0;
+    color: #3D5B16;
+    font-family: Century Gothic;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.572px;
+}
+
+
+
+
+.icon-container .icon:last-child {
+    display: flex;
+    align-items: center;
+}
+
+
+.icon-container .icon:last-child img {
+    width: 29px;
+    height: 33px;
+    margin-right: 10px;
+ 
+}
+
+.icon-container .icon:last-child p {
+    white-space: nowrap;
+    margin: 0;
+    color: #3D5B16;
+    font-family: Century Gothic;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.572px;
+}
+
 
 /* Footer  Place 2 */
 .footer2 {
@@ -787,15 +871,16 @@ img {
 
 /* Body error page*/
 .bodyerror {
-    background-image: url("Images/error1.png");
-    height: 730px;
+    background-image: url("Images/error3.png");
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center; /* Center the background image */
+    height: 100vh; /* Set the height to cover the entire viewport */
     background-color: var(--secondary-color);
-    background-size: 100%;
-    display: block;
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Reset margin to zero */
+    padding: 0; /* Reset padding to zero */
 }
+
 
 /* Back to top button */
 .backToTopButton {
@@ -963,7 +1048,7 @@ input {
 
 
 /* Second popup */
-.nextPopup {
+.next-Popup {
     display: none;
     position: fixed;
     top: 50%;
@@ -976,7 +1061,7 @@ input {
     border-radius: 8px;
 }
 
-.nextPopup .popup-content {
+.next-Popup .popup-content {
     text-align: top;
     padding-top: 12px;
     color: #FFF;
