@@ -45,11 +45,6 @@ nav ul {
     color: var(--secondary-color);
 
 }
-
-body:not(.page1) {
-    background-image: none;
-}
-
 .secondary-nav {
     color: var(--primary-color);
 }
@@ -234,9 +229,7 @@ h1 {
     color: var(--secondary-color);
     content: '↓';
     height: 35px;
-    font-size: 40px;
     left: 50%;
-    line-height: 50px;
     margin-left: -50px;
     position: absolute;
     text-align: center;
